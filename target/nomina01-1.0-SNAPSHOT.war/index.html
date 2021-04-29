@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nomina</title>
+</head>
+<body>
+
+<h1>Nomina</h1>
+<form action="salida.jsp" method="post">
+    <fieldeset>
+        <legend>Formulario</legend>
+        <label>Nombre</label>
+        <input type="text" name="nombre" autofocus pattern="[A-Za-z]{2,30}">
+        <br>
+        <label>Apellido</label>
+        <input type="text" name="apellido" pattern="[A-Za-z]{2,30}">
+        <br>
+        <label>Documento</label>
+        <input type="number" name="documento" pattern="{2,12}">
+        <br>
+        <label>Dias trabajados</label>
+        <input type="number" name="dias" pattern="{0,31}">
+        <br>
+        <label>sueldo</label>
+        <input type="Number" name="sueldo" pattern="{900000,}">
+        <br>
+        <input type="submit" value="Calcular">
+    </fieldeset>
+</form>
+
+</body>
+</html>
